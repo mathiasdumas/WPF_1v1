@@ -1,0 +1,22 @@
+﻿<Window x:Class="TP_WPF_1v1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP_WPF_1v1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Griffer Roger" HorizontalAlignment="Left" Height="43" Margin="135,331,0,0" VerticalAlignment="Top" Width="119" Click="Raton_Attack_Button_Click"/>
+        <Button Content="Savater Raton" HorizontalAlignment="Left" Height="43" Margin="571,331,0,0" VerticalAlignment="Top" Width="119" Click="Roger_Attack_Button_Click"/>
+        <Image Source="/img/raton.jpg" Height="180" Margin="70,-106,480,106"></Image>
+        <Image Source="/img/roger.jpg" Height="180" Margin="230,21,-230,233"></Image>
+        <TextBlock Text="{Binding Raton.Name}" Margin="45,199,455,185" Width="300" Height="50" TextAlignment="Center"  FontSize="20"></TextBlock>
+        <TextBlock Text="{Binding Roger.Name}" Margin="480,199,20,185" Width="300" Height="50" TextAlignment="Center"  FontSize="20"></TextBlock>
+        <TextBlock Text="{Binding Raton.HealthPoints}" Margin="45,281,455,103" Width="300" Height="50" TextAlignment="Center"  FontSize="20"></TextBlock>
+        <TextBlock Text="{Binding Roger.HealthPoints}" Margin="490,281,10,103" Width="300" Height="50" TextAlignment="Center"  FontSize="20"></TextBlock>
+        <TextBlock x:Name="result" HorizontalAlignment="Left" Margin="370,268,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Image x:Name="griffe" Source="/img/griffe.png" Width="100" Margin="382,61,318,273" Visibility="Hidden"></Image>
+        <Image x:Name="botte" Source="/img/botte.png" Width="100" Margin="382,61,318,273" Visibility="Hidden"></Image>
+    </Grid>
+</Window>
